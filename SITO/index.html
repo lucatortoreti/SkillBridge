@@ -1,0 +1,1091 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SkillBridge | Que te contraten por lo que sabes hacer</title>
+<meta name="description" content="SkillBridge sustituye el curr&iacute;culum por retos pr&aacute;cticos de 12 a 20 minutos. Insignias verificadas desde el m&oacute;vil y entrevistas por competencias reales, sin filtro por a&ntilde;os de experiencia.">
+<meta name="author" content="SkillBridge S.r.l.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://lucatortoreti.github.io/skillbridge/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SkillBridge">
+<meta property="og:locale" content="es_ES">
+<meta property="og:url" content="https://lucatortoreti.github.io/skillbridge/">
+<meta property="og:title" content="SkillBridge | Que te contraten por lo que sabes hacer">
+<meta property="og:description" content="Retos pr&aacute;cticos de 12 a 20 minutos, insignias verificadas y entrevista directa. La plataforma h&iacute;brida de selecci&oacute;n basada en el m&eacute;rito.">
+<meta property="og:image" content="https://lucatortoreti.github.io/skillbridge/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logotipo de SkillBridge junto al eslogan Skills today, opportunities tomorrow.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SkillBridge | Que te contraten por lo que sabes hacer">
+<meta name="twitter:description" content="Retos pr&aacute;cticos, insignias verificadas y entrevista directa.">
+<meta name="twitter:image" content="https://lucatortoreti.github.io/skillbridge/assets/og-image.png">
+
+<meta name="theme-color" content="#0D2342" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F1F5FB" media="(prefers-color-scheme: light)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-64.png" sizes="64x64" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SkillBridge S.r.l.",
+  "alternateName": "SkillBridge",
+  "url": "https://lucatortoreti.github.io/skillbridge/",
+  "logo": "https://lucatortoreti.github.io/skillbridge/assets/logo-skillbridge.png",
+  "image": "https://lucatortoreti.github.io/skillbridge/assets/og-image.png",
+  "slogan": "Skills today, opportunities tomorrow",
+  "description": "Plataforma h\u00edbrida de selecci\u00f3n basada en el m\u00e9rito: retos pr\u00e1cticos, insignias verificadas e invitaciones directas a entrevista.",
+  "foundingDate": "2026",
+  "areaServed": "DE",
+  "sameAs": [
+    "https://www.linkedin.com/company/skillbridge-talent/",
+    "https://www.instagram.com/_skill_bridge_/"
+  ],
+  "member": [
+    {"@type":"Person","name":"Marta Scarcella"},
+    {"@type":"Person","name":"Martina Mercurio"},
+    {"@type":"Person","name":"Andrea Mineo"},
+    {"@type":"Person","name":"Luca Tortoreti"}
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root{
+    color-scheme:light;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{margin:0}
+  img{max-width:100%}
+  [hidden]{display:none!important}
+  section[id]{scroll-margin-top:86px}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+</style>
+<style>
+:root{
+  --paper:#F1F5FB;
+  --surface:#FFFFFF;
+  --surface-2:#E7EDF8;
+  --line:#D2DCEE;
+  --line-soft:#E2E9F5;
+  --ink:#0D2342;
+  --text:#152A4A;
+  --muted:#55658A;
+  --volt:#2B70E4;
+  --volt-soft:#E4EDFC;
+  --volt-ink:#1F57B8;
+  --shadow:0 1px 2px rgba(13,35,66,.06), 0 12px 28px -18px rgba(13,35,66,.35);
+  --r:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#071322;
+    --surface:#0D1F38;
+    --surface-2:#132845;
+    --line:#1E3760;
+    --line-soft:#16294A;
+    --ink:#EAF1FC;
+    --text:#DCE6F6;
+    --muted:#93A6C6;
+    --volt:#5F97F8;
+    --volt-soft:#12294B;
+    --volt-ink:#8CB6FB;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 16px 34px -20px rgba(0,0,0,.8);
+  }
+  :root:not([data-theme="light"]) .problem{border:1px solid var(--line)}
+  :root:not([data-theme="light"]) .fill.alt{background:#7FA9F5}
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#071322;
+  --surface:#0D1F38;
+  --surface-2:#132845;
+  --line:#1E3760;
+  --line-soft:#16294A;
+  --ink:#EAF1FC;
+  --text:#DCE6F6;
+  --muted:#93A6C6;
+  --volt:#5F97F8;
+  --volt-soft:#12294B;
+  --volt-ink:#8CB6FB;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 16px 34px -20px rgba(0,0,0,.8);
+}
+:root[data-theme="dark"] .problem{border:1px solid var(--line)}
+:root[data-theme="dark"] .fill.alt{background:#7FA9F5}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.01ms !important;animation-iteration-count:1 !important;
+    transition-duration:.01ms !important;scroll-behavior:auto !important}
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--text);
+  font-family:"IBM Plex Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:16px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{
+  font-family:Archivo,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color:var(--ink);
+  margin:0;
+  text-wrap:balance;
+  letter-spacing:-.022em;
+  line-height:1.1;
+}
+p{margin:0}
+a{color:var(--volt-ink)}
+
+.wrap{width:100%;max-width:1080px;margin-inline:auto;padding-inline:20px}
+section{padding-block:clamp(52px,8vw,84px)}
+.eyebrow{
+  font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--muted);display:flex;align-items:center;gap:10px;margin-bottom:18px;
+}
+.eyebrow::before{
+  content:"";width:9px;height:9px;flex:none;
+  background:var(--volt);
+  clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);
+}
+.lede{font-size:clamp(17px,2vw,19px);color:var(--muted);max-width:62ch}
+.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
+
+/* ---------- node rule: echoes the circuit path in the logo ---------- */
+.noderule{display:flex;align-items:center;gap:0;height:1px;background:var(--line-soft);position:relative}
+.noderule::before,.noderule::after{
+  content:"";position:absolute;width:7px;height:7px;background:var(--volt);border-radius:50%;
+}
+.noderule::before{left:0}
+.noderule::after{right:0;background:var(--line);}
+
+/* ---------- header ---------- */
+header.site{
+  position:sticky;top:env(safe-area-inset-top,0px);z-index:40;
+  background:color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter:saturate(150%) blur(10px);
+  border-bottom:1px solid var(--line-soft);
+}
+.bar{display:flex;align-items:center;gap:18px;min-height:62px}
+.wordmark{
+  font-family:Archivo;font-weight:800;font-size:19px;letter-spacing:-.03em;
+  color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;gap:9px;flex:none;
+}
+.wordmark em{font-style:normal;color:var(--volt)}
+.wordmark .glyph{width:20px;height:20px;flex:none}
+nav.main{display:flex;gap:22px;margin-left:auto;flex-wrap:wrap}
+nav.main a{
+  color:var(--muted);text-decoration:none;font-size:14px;font-weight:500;
+  padding-block:4px;border-bottom:1px solid transparent;
+}
+nav.main a:hover{color:var(--ink);border-bottom-color:var(--volt)}
+@media (max-width:860px){
+  .bar{flex-wrap:wrap;padding-block:10px;gap:10px 14px;min-height:0}
+  .bar .btn{margin-left:auto}
+  nav.main{order:3;width:100%;margin-left:0;flex-wrap:nowrap;overflow-x:auto;gap:20px;padding-bottom:4px}
+  nav.main a{white-space:nowrap}
+}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-family:"IBM Plex Sans";font-size:14.5px;font-weight:600;line-height:1;
+  padding:12px 18px;border-radius:999px;text-decoration:none;border:1px solid transparent;
+  cursor:pointer;transition:transform .15s ease, background .15s ease, border-color .15s ease;
+}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--volt);color:#fff;border-color:var(--volt)}
+.btn-primary:hover{background:var(--volt-ink);border-color:var(--volt-ink)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--volt);color:var(--volt-ink)}
+.btn-sm{padding:9px 15px;font-size:13.5px}
+:where(a,button,input,select,textarea):focus-visible{outline:2px solid var(--volt);outline-offset:2px;border-radius:6px}
+
+/* ---------- hero ---------- */
+.hero{padding-block:clamp(44px,7vw,74px) clamp(40px,6vw,64px)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,52px);align-items:center}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr;gap:34px}}
+h1{font-size:clamp(34px,5.6vw,58px);font-weight:800;letter-spacing:-.035em}
+h1 .hl{color:var(--volt)}
+.hero p.lede{margin-top:20px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-meta{
+  display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:26px;padding-top:20px;
+  border-top:1px solid var(--line-soft);
+  font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--muted);
+}
+.figure{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  box-shadow:var(--shadow);padding:18px 18px 12px;
+}
+.figure svg{display:block;width:100%;height:auto;max-width:100%}
+.figure figcaption{
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--muted);border-top:1px solid var(--line-soft);
+  padding-top:10px;margin-top:6px;
+}
+@media (prefers-reduced-motion: reduce){.pulse{display:none}}
+
+/* ---------- generic cards ---------- */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media (max-width:820px){.grid-3{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}}
+.card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:24px;display:flex;flex-direction:column;gap:10px;
+}
+.card h3{font-size:19px;font-weight:700}
+.card p{color:var(--muted);font-size:15px}
+.card p b{color:var(--ink);font-weight:600}
+.tag{
+  align-self:flex-start;font-family:"IBM Plex Mono",monospace;font-size:10.5px;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--volt-ink);
+  background:var(--volt-soft);padding:5px 9px;border-radius:5px;
+}
+
+/* ---------- problem banner ---------- */
+.problem{
+  background:var(--ink);border-radius:var(--r);padding:clamp(26px,4vw,44px);
+  display:grid;grid-template-columns:1fr 1fr;gap:clamp(22px,3vw,44px);align-items:center;
+}
+@media (max-width:820px){.problem{grid-template-columns:1fr}}
+.problem h2{color:#fff;font-size:clamp(24px,3.4vw,34px)}
+.problem p{color:#A9C0E4;margin-top:14px;font-size:16px}
+.problem .eyebrow{color:#7E9BC9}
+.barrier{border-left:2px solid var(--volt);padding-left:18px;display:grid;gap:14px}
+.barrier div{color:#C8D9F2;font-size:15px}
+.barrier b{color:#fff;font-weight:600;display:block;font-family:Archivo;letter-spacing:-.01em}
+
+/* ---------- steps ---------- */
+ol.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+@media (max-width:820px){ol.steps{grid-template-columns:1fr}}
+ol.steps li{position:relative;padding:26px 22px 26px 0;border-top:2px solid var(--line-soft)}
+ol.steps li:first-child{border-top-color:var(--volt)}
+ol.steps li::before{
+  content:"";position:absolute;top:-6px;left:0;width:10px;height:10px;border-radius:50%;
+  background:var(--paper);border:2px solid var(--line);
+}
+ol.steps li:first-child::before{border-color:var(--volt);background:var(--volt)}
+ol.steps .n{
+  font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;
+  color:var(--volt-ink);display:block;margin-bottom:8px;
+}
+ol.steps h3{font-size:16.5px;font-weight:700;margin-bottom:6px}
+ol.steps p{font-size:14.5px;color:var(--muted)}
+
+/* ---------- challenge demo ---------- */
+.demo{display:grid;grid-template-columns:270px 1fr;gap:20px;align-items:start}
+@media (max-width:820px){.demo{grid-template-columns:1fr}}
+.chips{display:flex;flex-direction:column;gap:8px}
+@media (max-width:820px){.chips{flex-direction:row;flex-wrap:wrap}}
+.chip{
+  font-family:"IBM Plex Sans";font-size:14.5px;font-weight:500;text-align:left;
+  background:var(--surface);color:var(--text);border:1px solid var(--line);
+  border-radius:10px;padding:13px 15px;cursor:pointer;display:flex;justify-content:space-between;
+  align-items:center;gap:10px;transition:border-color .15s ease,background .15s ease;
+}
+.chip:hover{border-color:var(--volt)}
+.chip .id{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted)}
+.chip[aria-selected="true"]{background:var(--volt);border-color:var(--volt);color:#fff}
+.chip[aria-selected="true"] .id{color:#CFE0FB}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px;box-shadow:var(--shadow)}
+.panel .head{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:baseline;margin-bottom:14px}
+.panel h3{font-size:21px;font-weight:700}
+.panel .meta{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.brief{font-size:16px;color:var(--text);border-left:2px solid var(--volt);padding-left:16px;margin-bottom:20px}
+.crit{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:9px}
+.crit li{font-size:14.5px;color:var(--muted);display:flex;gap:10px;align-items:flex-start}
+.crit li::before{content:"";width:6px;height:6px;margin-top:8px;flex:none;background:var(--volt);transform:rotate(45deg)}
+.badge{
+  display:inline-flex;align-items:center;gap:12px;background:var(--volt-soft);
+  border:1px solid color-mix(in srgb,var(--volt) 34%, transparent);
+  border-radius:10px;padding:12px 16px;
+}
+.badge .shield{width:26px;height:26px;flex:none}
+.badge .t{font-family:Archivo;font-weight:700;color:var(--ink);font-size:15px;letter-spacing:-.01em}
+.badge .s{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--volt-ink)}
+
+/* ---------- audiences ---------- */
+.aud{display:grid;grid-template-columns:1fr auto 1fr;gap:0;align-items:stretch}
+@media (max-width:900px){.aud{grid-template-columns:1fr}}
+.aud-col{background:var(--surface);border:1px solid var(--line);padding:clamp(22px,3vw,32px);display:flex;flex-direction:column;gap:18px}
+.aud-col:first-child{border-radius:var(--r) 0 0 var(--r);border-right:0}
+.aud-col:last-child{border-radius:0 var(--r) var(--r) 0;border-left:0}
+@media (max-width:900px){
+  .aud-col:first-child{border-radius:var(--r) var(--r) 0 0;border-right:1px solid var(--line)}
+  .aud-col:last-child{border-radius:0 0 var(--r) var(--r);border-left:1px solid var(--line);border-top:0}
+}
+.aud-span{
+  display:flex;align-items:center;justify-content:center;width:64px;
+  border-block:1px solid var(--line);background:var(--surface);
+  background-image:radial-gradient(circle, var(--line) 1.2px, transparent 1.2px);
+  background-size:8px 8px;
+}
+@media (max-width:900px){.aud-span{width:auto;height:46px;border-inline:1px solid var(--line)}}
+.aud-col h3{font-size:22px;font-weight:800}
+.aud-col .who{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--volt-ink)}
+.rows{display:grid;gap:14px}
+.row-l{
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--muted);margin-bottom:3px;
+}
+.rows > div{border-top:1px solid var(--line-soft);padding-top:12px}
+.rows p{font-size:15px}
+
+/* ---------- mission / vision ---------- */
+.mv{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media (max-width:820px){.mv{grid-template-columns:1fr}}
+.mv .card{gap:14px;padding:clamp(24px,3vw,34px)}
+.mv .card h3{font-size:clamp(21px,2.6vw,26px)}
+.mv .card .big{font-size:18px;color:var(--text);font-weight:500}
+
+/* ---------- chart ---------- */
+.chartbox{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:clamp(22px,3vw,30px)}
+.bars{display:grid;gap:18px;margin-top:6px}
+.bar-row{display:grid;grid-template-columns:200px 1fr 52px;gap:16px;align-items:center}
+@media (max-width:640px){.bar-row{grid-template-columns:1fr;gap:6px}}
+.bar-row .lab{font-size:14.5px;color:var(--text)}
+.bar-row .val{
+  font-family:"IBM Plex Mono",monospace;font-size:14px;font-weight:500;color:var(--ink);
+  text-align:right;font-variant-numeric:tabular-nums;
+}
+@media (max-width:640px){.bar-row .val{text-align:left}}
+.track{position:relative;height:12px;background:var(--surface-2);border-radius:3px;overflow:hidden}
+.fill{position:absolute;inset-block:0;left:0;background:var(--volt);border-radius:3px}
+.fill.alt{background:var(--ink)}
+.axis{display:grid;grid-template-columns:200px 1fr 52px;gap:16px;margin-top:14px}
+@media (max-width:640px){.axis{grid-template-columns:1fr}.axis .sp{display:none}}
+.ticks{display:flex;justify-content:space-between;font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--muted);border-top:1px solid var(--line-soft);padding-top:6px}
+.figs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+@media (max-width:820px){.figs{grid-template-columns:1fr}}
+.fig{border-top:2px solid var(--volt);padding-top:14px}
+.fig .n{font-family:Archivo;font-weight:800;font-size:clamp(26px,3.4vw,34px);color:var(--ink);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.fig .d{font-size:14px;color:var(--muted);margin-top:4px}
+.src{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);margin-top:20px;letter-spacing:.04em}
+
+/* ---------- funnel ---------- */
+.funnel{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:26px}
+@media (max-width:820px){.funnel{grid-template-columns:1fr}}
+.fstep{
+  background:var(--volt-soft);border:1px solid color-mix(in srgb,var(--volt) 24%, transparent);
+  border-radius:10px;padding:16px 18px;
+}
+.fstep .k{font-family:Archivo;font-weight:800;font-size:17px;color:var(--ink);letter-spacing:-.02em}
+.fstep .v{font-size:14px;color:var(--muted);margin-top:4px}
+
+/* ---------- channels ---------- */
+.chan{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:820px){.chan{grid-template-columns:1fr}}
+.chan .card{gap:12px}
+.chan .ico{width:30px;height:30px;color:var(--volt)}
+.chan dl{margin:0;display:grid;gap:11px}
+.chan dt{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.chan dd{margin:2px 0 0;font-size:14.5px;color:var(--text)}
+.chan .link{margin-top:auto;padding-top:14px;border-top:1px solid var(--line-soft);font-size:13.5px;font-weight:600}
+.chan .soon{color:var(--muted);font-weight:500}
+
+/* ---------- brand ---------- */
+.brand{display:grid;grid-template-columns:minmax(0,340px) 1fr;gap:clamp(22px,3vw,40px);align-items:start}
+@media (max-width:820px){.brand{grid-template-columns:1fr}}
+.logo-swatch{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px;text-align:center}
+.logo-swatch img{width:100%;max-width:240px;height:auto;margin-inline:auto;display:block}
+.logo-swatch .cap{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#7C8CA8;margin-top:18px;border-top:1px solid #E4EAF4;padding-top:12px}
+.swatches{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+@media (max-width:520px){.swatches{grid-template-columns:1fr}}
+.sw{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--surface)}
+.sw .chipc{height:64px}
+.sw .info{padding:12px 14px}
+.sw .hex{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink);font-weight:500}
+.sw .nm{font-size:13.5px;font-weight:600;color:var(--ink);margin-top:2px}
+.sw .ro{font-size:13px;color:var(--muted);margin-top:4px}
+.slogan-box{border:1px solid var(--line);border-radius:var(--r);padding:22px;background:var(--surface);margin-top:22px}
+.slogan-box .q{font-family:Archivo;font-weight:800;font-size:clamp(20px,3vw,27px);color:var(--ink);letter-spacing:-.03em}
+.slogan-box .n{font-size:14px;color:var(--muted);margin-top:8px}
+.rationale{display:grid;gap:16px}
+.rationale .r{border-left:2px solid var(--volt);padding-left:16px}
+.rationale h4{font-family:Archivo;font-size:15.5px;font-weight:700;color:var(--ink);margin-bottom:4px}
+.rationale p{font-size:14.5px;color:var(--muted)}
+
+/* ---------- team ---------- */
+.team{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media (max-width:820px){.team{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:420px){.team{grid-template-columns:1fr}}
+.member{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px}
+.member .in{
+  width:38px;height:38px;border-radius:50%;background:var(--volt-soft);
+  color:var(--volt-ink);display:flex;align-items:center;justify-content:center;
+  font-family:Archivo;font-weight:800;font-size:14px;letter-spacing:-.01em;margin-bottom:12px;
+}
+.member .nm{font-family:Archivo;font-weight:700;font-size:15.5px;color:var(--ink);letter-spacing:-.015em}
+.member .rl{font-size:13px;color:var(--muted);margin-top:3px}
+
+/* ---------- contact ---------- */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:clamp(22px,3vw,40px);align-items:start}
+@media (max-width:820px){.contact{grid-template-columns:1fr}}
+form{display:grid;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:clamp(22px,3vw,28px)}
+.field{display:grid;gap:6px}
+label{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+input,select,textarea{
+  font-family:"IBM Plex Sans";font-size:15px;color:var(--text);background:var(--paper);
+  border:1px solid var(--line);border-radius:8px;padding:11px 13px;width:100%;
+}
+textarea{resize:vertical;min-height:88px}
+input:focus,select:focus,textarea:focus{border-color:var(--volt);outline:none}
+.form-note{font-size:13px;color:var(--muted)}
+.sent{
+  border:1px solid var(--volt);background:var(--volt-soft);border-radius:10px;padding:16px;
+  font-size:14.5px;color:var(--text);
+}
+.sent b{color:var(--ink);display:block;font-family:Archivo;margin-bottom:5px}
+.reach{display:grid;gap:12px;margin-top:22px}
+.reach a{
+  display:flex;align-items:center;gap:14px;background:var(--surface);border:1px solid var(--line);
+  border-radius:10px;padding:15px 17px;text-decoration:none;color:var(--ink);
+}
+.reach a:hover{border-color:var(--volt)}
+.reach svg{width:22px;height:22px;flex:none;color:var(--volt)}
+.reach .h{font-weight:600;font-size:15px}
+.reach .u{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--muted);margin-top:2px;word-break:break-all}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);background:var(--surface);padding-block:44px 34px;margin-top:20px}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:34px}
+@media (max-width:820px){.foot-grid{grid-template-columns:1fr}}
+.refs{display:grid;gap:12px;margin-top:14px}
+.refs p{font-size:13px;color:var(--muted);padding-left:26px;text-indent:-26px;line-height:1.55}
+.refs a{word-break:break-all}
+.academic{font-size:13.5px;color:var(--muted);margin-top:16px}
+.academic b{color:var(--ink);font-weight:600}
+.foot-end{
+  display:flex;flex-wrap:wrap;gap:10px 20px;justify-content:space-between;align-items:center;
+  border-top:1px solid var(--line-soft);margin-top:30px;padding-top:20px;
+  font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--muted);
+}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap bar">
+    <a class="wordmark" href="#top">
+      <svg class="glyph" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M3 19h4l4-4h5.5a3.5 3.5 0 0 0 0-7H10a3.5 3.5 0 0 1 0-7h5l3-3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="3" cy="19" r="2.2" fill="#2B70E4"/><circle cx="21" cy="5" r="2.2" fill="#2B70E4"/>
+      </svg>
+      Skill<em>Bridge</em>
+    </a>
+    <nav class="main">
+      <a href="#producto">Cómo funciona</a>
+      <a href="#publicos">Para quién</a>
+      <a href="#alemania">Alemania</a>
+      <a href="#acceso">Acceso y pago</a>
+      <a href="#marca">Marca</a>
+      <a href="#equipo">Equipo</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="#contacto">Hablemos</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Plataforma híbrida de selección</div>
+      <h1>Que te contraten por lo que <span class="hl">sabes hacer</span>, no por los años que pone tu CV.</h1>
+      <p class="lede">SkillBridge sustituye el currículum por retos prácticos de 12 a 20 minutos. Los resuelves desde el móvil, obtienes insignias verificadas y las empresas te invitan a entrevista con la prueba delante.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#reto">Prueba un reto</a>
+        <a class="btn btn-ghost" href="#empresas">Soy una empresa</a>
+      </div>
+      <div class="hero-meta">
+        <span>Candidatos 20–28</span>
+        <span>RR. HH. y pymes</span>
+        <span>Lanzamiento: Alemania</span>
+      </div>
+    </div>
+
+    <figure class="figure" style="margin:0">
+      <svg viewBox="0 0 520 240" role="img" aria-labelledby="bridgeTitle">
+        <title id="bridgeTitle">Dos rutas: el CV tradicional se queda plano y se descarta; la ruta SkillBridge sube por retos verificados hasta la entrevista.</title>
+        <!-- traditional CV track: flat, ends in a discard -->
+        <path d="M 26 188 H 462" stroke="var(--line)" stroke-width="2" stroke-dasharray="3 7" stroke-linecap="round" fill="none"/>
+        <g stroke="var(--muted)" stroke-width="2" stroke-linecap="round">
+          <path d="M 474 182 L 486 194"/><path d="M 486 182 L 474 194"/>
+        </g>
+        <circle cx="26" cy="188" r="5.5" fill="var(--surface)" stroke="var(--muted)" stroke-width="2"/>
+        <text x="26" y="214" fill="var(--muted)" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1.3">CV TRADICIONAL</text>
+        <text x="26" y="231" fill="var(--muted)" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1.3" opacity=".72">FILTRADO ANTES DE LEERSE</text>
+
+        <!-- SkillBridge route -->
+        <path id="sbpath" d="M 26 188 H 86 L 146 152 H 206 L 266 116 H 326 L 386 80 H 446 L 494 52"
+              stroke="var(--volt)" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="var(--volt)">
+          <circle cx="146" cy="152" r="5"/><circle cx="266" cy="116" r="5"/><circle cx="386" cy="80" r="5"/>
+        </g>
+        <circle cx="494" cy="52" r="8.5" fill="var(--volt)"/>
+        <circle cx="494" cy="52" r="3.4" fill="var(--surface)"/>
+        <text x="494" y="30" text-anchor="end" fill="var(--volt)" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1.3">ENTREVISTA</text>
+        <text x="152" y="142" fill="var(--muted)" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.1">RETO</text>
+        <text x="272" y="106" fill="var(--muted)" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.1">RETO</text>
+        <text x="392" y="70" fill="var(--muted)" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.1">INSIGNIA</text>
+        <circle class="pulse" r="4" fill="var(--volt)" opacity=".85">
+          <animateMotion dur="7s" repeatCount="indefinite"
+            path="M 26 188 H 86 L 146 152 H 206 L 266 116 H 326 L 386 80 H 446 L 494 52"/>
+        </circle>
+      </svg>
+      <figcaption>Dos rutas para el mismo candidato</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= PROBLEM ================= -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="problem">
+      <div>
+        <div class="eyebrow">El límite del modelo tradicional</div>
+        <h2>Los filtros automáticos descartan el talento júnior antes de que lo lea una persona.</h2>
+        <p>Los sistemas de cribado excluyen a priori perfiles de alto potencial solo por la falta de experiencia formal. La Generación Z es la categoría más penalizada: envía la candidatura y no recibe ni respuesta ni motivo.</p>
+      </div>
+      <div class="barrier">
+        <div><b>Tres años de experiencia</b>El requisito que bloquea la primera oportunidad de quien nunca ha podido tenerla.</div>
+        <div><b>Prestigio y contactos</b>Se evalúa la universidad o la recomendación antes que la competencia concreta.</div>
+        <div><b>Cero retroalimentación</b>Sin respuesta ni criterio, el candidato no sabe qué mejorar para la próxima vez.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRODUCT ================= -->
+<section id="producto">
+  <div class="wrap">
+    <div class="eyebrow">La innovación de SkillBridge</div>
+    <h2 style="font-size:clamp(26px,3.6vw,36px)">Tres piezas sustituyen al currículum</h2>
+    <p class="lede" style="margin-top:14px">Una prueba real, resuelta en minutos, que deja evidencia verificable para las dos partes.</p>
+
+    <div class="grid-3" style="margin-top:32px">
+      <article class="card">
+        <span class="tag">Retos prácticos</span>
+        <h3>Pruebas reales, no filtros por antigüedad</h3>
+        <p>Escribir un copy para redes, corregir un error de código o analizar un conjunto pequeño de datos. El reto mide lo que el puesto pide de verdad.</p>
+      </article>
+      <article class="card">
+        <span class="tag">Microtareas</span>
+        <h3>De 12 a 20 minutos, desde el móvil</h3>
+        <p>Desafíos breves del mundo real, pensados para el formato en el que ya vive la Generación Z: corto, interactivo y con niveles.</p>
+      </article>
+      <article class="card">
+        <span class="tag">Credenciales verificadas</span>
+        <h3>Insignias digitales que valen como prueba</h3>
+        <p>Al superar un reto se emite una insignia verificada. Es lo que ve el reclutador, y es lo que desbloquea la invitación directa a entrevista.</p>
+      </article>
+    </div>
+
+    <div class="noderule" style="margin-block:44px 32px"></div>
+
+    <div class="eyebrow">El recorrido completo</div>
+    <ol class="steps">
+      <li><span class="n">PASO 01</span><h3>Eliges un reto</h3><p>Por competencia y nivel. Ves el tiempo estimado y los criterios de corrección antes de empezar.</p></li>
+      <li><span class="n">PASO 02</span><h3>Lo resuelves</h3><p>Desde el móvil, dentro del tiempo marcado. Sin CV, sin carta de presentación, sin contactos.</p></li>
+      <li><span class="n">PASO 03</span><h3>Recibes la insignia</h3><p>Corrección con criterios públicos y feedback en menos de 24 horas. La insignia queda verificada en tu perfil.</p></li>
+      <li><span class="n">PASO 04</span><h3>Te invitan a entrevista</h3><p>Las empresas buscan por insignia y contactan directamente. Entras a la entrevista con la prueba ya hecha.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= CHALLENGE DEMO ================= -->
+<section id="reto" style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">Catálogo de retos</div>
+    <h2 style="font-size:clamp(26px,3.6vw,36px)">Mira cómo es un reto por dentro</h2>
+    <p class="lede" style="margin-top:14px;margin-bottom:28px">Cada reto publica su enunciado, su duración y los criterios con los que se corrige. Elige uno para ver el detalle.</p>
+
+    <div class="demo">
+      <div class="chips" role="tablist" aria-label="Retos disponibles">
+        <button class="chip" role="tab" aria-selected="true" data-i="0">Copy para redes <span class="id">#037</span></button>
+        <button class="chip" role="tab" aria-selected="false" data-i="1">Depuración de código <span class="id">#052</span></button>
+        <button class="chip" role="tab" aria-selected="false" data-i="2">Análisis de datos <span class="id">#068</span></button>
+        <button class="chip" role="tab" aria-selected="false" data-i="3">Plan de medios <span class="id">#081</span></button>
+      </div>
+
+      <div class="panel" id="retoPanel" role="tabpanel" aria-live="polite">
+        <div class="head">
+          <h3>Copy para redes</h3>
+          <span class="meta">Reto #037 · 12 min · móvil</span>
+        </div>
+        <p class="brief">Escribe el copy de un Reel de 15 segundos para lanzar una app de empleo dirigida a jóvenes de 20 a 28 años.</p>
+        <ul class="crit">
+          <li>El gancho aparece en los tres primeros segundos.</li>
+          <li>Una sola llamada a la acción, explícita.</li>
+          <li>Máximo 220 caracteres, sin listas de hashtags.</li>
+        </ul>
+        <div class="badge">
+          <svg class="shield" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2.6 20 5.5v6.1c0 4.7-3.2 8.3-8 9.8-4.8-1.5-8-5.1-8-9.8V5.5z" fill="var(--volt)"/>
+            <path d="m8.4 12.1 2.6 2.6 4.8-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div><div class="t">Social Copy · Nivel 2</div><div class="s">Insignia verificada</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AUDIENCES ================= -->
+<section id="publicos">
+  <div class="wrap">
+    <div class="eyebrow">Dos públicos, un mismo puente</div>
+    <h2 style="font-size:clamp(26px,3.6vw,36px)">Quién está a cada lado</h2>
+    <p class="lede" style="margin-top:14px;margin-bottom:30px">SkillBridge solo funciona si las dos orillas se benefician: el candidato demuestra, la empresa ahorra criba.</p>
+
+    <div class="aud">
+      <div class="aud-col" id="candidatos">
+        <div>
+          <div class="who">B2C · Candidatos</div>
+          <h3 style="margin-top:8px">Generación Z</h3>
+        </div>
+        <div class="rows">
+          <div><div class="row-l">Perfil demográfico</div><p>20–28 años. Estudiantes, recién graduados y perfiles júnior buscando la primera oportunidad.</p></div>
+          <div><div class="row-l">Necesidades clave</div><p>Evaluación objetiva, sin el requisito de tres años de experiencia, y feedback inmediato tras cada candidatura.</p></div>
+          <div><div class="row-l">Comportamiento digital</div><p>Solo smartphone. Vídeo corto en TikTok e Instagram Reels, apps con niveles, retos e insignias.</p></div>
+        </div>
+      </div>
+
+      <div class="aud-span" aria-hidden="true">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+          <path d="M6 28h8l6-8h6" stroke="var(--volt)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M20 20h6l6-8h2" stroke="var(--volt)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="6" cy="28" r="3" fill="var(--volt)"/><circle cx="34" cy="12" r="3" fill="var(--volt)"/>
+        </svg>
+      </div>
+
+      <div class="aud-col" id="empresas">
+        <div>
+          <div class="who">B2B · Empresas</div>
+          <h3 style="margin-top:8px">RR. HH. y reclutadores</h3>
+        </div>
+        <div class="rows">
+          <div><div class="row-l">Perfil profesional</div><p>30–65 años. Responsables de RR. HH., seleccionadores y propietarios de pymes y startups.</p></div>
+          <div><div class="row-l">Necesidades primarias</div><p>Reducir el time-to-hire y dejar de leer cientos de currículums genéricos o generados en serie con IA.</p></div>
+          <div><div class="row-l">Hábitos operativos</div><p>Ordenador de sobremesa durante la jornada, LinkedIn a diario y decisiones basadas en datos concretos.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MISSION / VISION ================= -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">Dirección estratégica</div>
+    <div class="mv" style="margin-top:6px">
+      <article class="card">
+        <h3>Nuestra misión</h3>
+        <p class="big">Democratizar el acceso al empleo eliminando los sesgos de selección.</p>
+        <p>Que el talento destaque por lo que sabe hacer en la práctica y que las empresas reciban perfiles ya cualificados en competencias reales.</p>
+      </article>
+      <article class="card">
+        <h3>Nuestra visión</h3>
+        <p class="big">Ser el estándar europeo del reclutamiento meritocrático.</p>
+        <p>Sustituir el currículum tradicional por insignias verificadas y pruebas objetivas de rendimiento profesional.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GERMANY ================= -->
+<section id="alemania">
+  <div class="wrap">
+    <div class="eyebrow">Expansión internacional</div>
+    <h2 style="font-size:clamp(26px,3.6vw,36px)">Empezamos por Alemania</h2>
+    <p class="lede" style="margin-top:14px">Uno de los mercados laborales más sólidos de Europa, con una demanda constante de perfiles técnicos y, a la vez, procesos de selección extremadamente formales. Ahí es donde una prueba práctica vale más que una carta de recomendación.</p>
+
+    <div class="grid-2" style="margin-top:30px">
+      <article class="card">
+        <span class="tag">Barrera de entrada</span>
+        <h3>Muchas vacantes, acceso rígido</h3>
+        <p>Tener ofertas no equivale a encontrar trabajo: el sistema alemán es formal y burocrático, y penaliza especialmente a los perfiles jóvenes sin trayectoria local.</p>
+      </article>
+      <article class="card">
+        <span class="tag">Talento internacional</span>
+        <h3>Preparados, pero sin red de contactos</h3>
+        <p>Quien llega del extranjero no conoce las dinámicas locales ni tiene referencias. Con competencias verificadas, demuestra su valor desde el primer día.</p>
+      </article>
+    </div>
+
+    <div class="chartbox" style="margin-top:30px">
+      <div class="eyebrow" style="margin-bottom:22px">Alemania digital en cifras</div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="lab">Penetración de internet</div>
+          <div class="track"><div class="fill" style="width:93%"></div></div>
+          <div class="val">93 %</div>
+        </div>
+        <div class="bar-row">
+          <div class="lab">WhatsApp · mensajería principal</div>
+          <div class="track"><div class="fill" style="width:82%"></div></div>
+          <div class="val">82 %</div>
+        </div>
+        <div class="bar-row">
+          <div class="lab">Población activa en redes sociales</div>
+          <div class="track"><div class="fill" style="width:80%"></div></div>
+          <div class="val">&gt;80 %</div>
+        </div>
+        <div class="bar-row">
+          <div class="lab">Escritorio en el entorno laboral</div>
+          <div class="track"><div class="fill alt" style="width:61%"></div></div>
+          <div class="val">61 %</div>
+        </div>
+        <div class="bar-row">
+          <div class="lab">Instagram · franja 20–35 años</div>
+          <div class="track"><div class="fill" style="width:54%"></div></div>
+          <div class="val">54 %</div>
+        </div>
+      </div>
+      <div class="axis">
+        <div class="sp"></div>
+        <div class="ticks"><span>0</span><span>25</span><span>50</span><span>75</span><span>100 %</span></div>
+        <div class="sp"></div>
+      </div>
+
+      <div class="figs">
+        <div class="fig"><div class="n">78 M</div><div class="d">personas conectadas en Alemania</div></div>
+        <div class="fig"><div class="n">20 M+</div><div class="d">perfiles en LinkedIn y XING en la región DACH</div></div>
+        <div class="fig"><div class="n">1 h 30</div><div class="d">de media diaria en redes sociales</div></div>
+      </div>
+      <p class="src">Fuente: DataReportal · We Are Social &amp; Meltwater, Digital 2024: Germany.</p>
+    </div>
+
+    <div class="grid-3" style="margin-top:30px">
+      <article class="card">
+        <span class="tag">Datos y transparencia</span>
+        <h3>Hablamos con cifras</h3>
+        <p>Porcentaje de matching y horas ahorradas por contratación. El management alemán evalúa soluciones por métricas demostrables, no por promesas.</p>
+      </article>
+      <article class="card">
+        <span class="tag">RGPD</span>
+        <h3>Cumplimiento máximo</h3>
+        <p>Privacidad y protección de datos por diseño, con garantías certificadas. Es la condición previa para que una empresa alemana adopte la plataforma.</p>
+      </article>
+      <article class="card">
+        <span class="tag">Dual content track</span>
+        <h3>Dos tonos, dos canales</h3>
+        <p>Case studies analíticos en LinkedIn para el B2B; formatos breves e irónicos en TikTok contra la ansiedad ante la entrevista.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMMERCE / ACCESS ================= -->
+<section id="acceso">
+  <div class="wrap">
+    <div class="eyebrow">Acceso, pago y recomendación</div>
+    <h2 style="font-size:clamp(26px,3.6vw,36px)">Del scroll a la insignia, sin salir del móvil</h2>
+    <p class="lede" style="margin-top:14px;margin-bottom:28px">Tres mecanismos cubren el recorrido completo: encontrarnos, empezar y volver.</p>
+
+    <div class="funnel">
+      <div class="fstep"><div class="k">Atraer</div><div class="v">Llegar a quien todavía no nos conoce, en los canales donde ya está.</div></div>
+      <div class="fstep"><div class="k">Convertir</div><div class="v">Que registrarse o pedir información cueste un clic, no un formulario largo.</div></div>
+      <div class="fstep"><div class="k">Fidelizar</div><div class="v">Que vuelva a por el siguiente reto porque el sistema le propone el adecuado.</div></div>
+    </div>
+
+    <div class="grid-3">
+      <article class="card">
+        <span class="tag">Social commerce</span>
+        <h3>Instagram Commerce</h3>
+        <p><b>Tienda integrada:</b> el catálogo de retos y packs es visible desde el perfil.</p>
+        <p><b>Etiquetas de producto:</b> inscripción directa desde publicaciones y Reels.</p>
+        <p><b>Formulario en un clic:</b> el reclutador pide una demo con los datos que ya tiene guardados en su perfil social, sin salir de la aplicación.</p>
+      </article>
+      <article class="card">
+        <span class="tag">M-commerce</span>
+        <h3>Pago móvil</h3>
+        <p>Con Apple Pay y Google Pay se desbloquea una prueba oficial o se destaca el perfil confirmando con huella o reconocimiento facial.</p>
+        <p>Sin escribir datos de pago y sin esperas: la operación se completa en la misma sesión en la que nace la intención.</p>
+      </article>
+      <article class="card">
+        <span class="tag">Inteligencia artificial</span>
+        <h3>Matching por competencias</h3>
+        <p>El sistema compara las insignias obtenidas con los requisitos reales de cada vacante y ordena a los candidatos por evidencia, no por palabras clave del CV.</p>
+        <p>También asiste la corrección de los retos y propone el siguiente nivel, que es lo que sostiene la fidelización.</p>
+      </article>
+    </div>
+
+    <div class="noderule" style="margin-block:44px 32px"></div>
+
+    <div class="eyebrow">Estrategia de redes sociales integrada</div>
+    <div class="chan">
+      <article class="card">
+        <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M3 9h4v12H3zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.55 4.78 5.87V21h-4v-5.5c0-1.31-.03-3-1.9-3-1.9 0-2.2 1.43-2.2 2.9V21h-4z"/></svg>
+        <h3>LinkedIn</h3>
+        <dl>
+          <dt>Público objetivo</dt><dd>Responsables de RR. HH., pymes y startups.</dd>
+          <dt>Objetivo de empresa</dt><dd>Ser el socio elegido para captar y preparar talento.</dd>
+          <dt>Relación con el cliente</dt><dd>Socios expertos y fiables, sin currículums inflados.</dd>
+        </dl>
+        <a class="link" href="https://www.linkedin.com/company/skillbridge-talent/" target="_blank" rel="noopener">Ver nuestra página →</a>
+      </article>
+
+      <article class="card">
+        <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 1 1-2.59-2.59c.27 0 .53.04.78.12v-3.1a5.7 5.7 0 0 0-.78-.06 5.68 5.68 0 1 0 5.68 5.68V9.01a7.35 7.35 0 0 0 4.28 1.38v-3.1a4.28 4.28 0 0 1-3.22-1.47"/></svg>
+        <h3>TikTok</h3>
+        <dl>
+          <dt>Público objetivo</dt><dd>Generación Z: universitarios, recién graduados y júnior (20–28).</dd>
+          <dt>Objetivo de empresa</dt><dd>Awareness masivo, descargas de la app y primeros retos.</dd>
+          <dt>Relación con el cliente</dt><dd>Ironía y empatía: menos ansiedad ante la entrevista.</dd>
+        </dl>
+        <span class="link soon">Canal en preparación</span>
+      </article>
+
+      <article class="card">
+        <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.15-3.23 1.66-4.77 4.92-4.92 1.27-.06 1.65-.07 4.85-.07m0 5.17a4.67 4.67 0 1 0 0 9.34 4.67 4.67 0 0 0 0-9.34m0 7.7a3.03 3.03 0 1 1 0-6.06 3.03 3.03 0 0 1 0 6.06m4.85-8.96a1.09 1.09 0 1 0 0 2.18 1.09 1.09 0 0 0 0-2.18"/></svg>
+        <h3>Instagram</h3>
+        <dl>
+          <dt>Público objetivo</dt><dd>Ambos segmentos, con prioridad en candidatos y jóvenes profesionales.</dd>
+          <dt>Objetivo de empresa</dt><dd>Consolidar la comunidad y demostrar resultados concretos.</dd>
+          <dt>Relación con el cliente</dt><dd>Historias reales de quien lo ha conseguido, más chat directo.</dd>
+        </dl>
+        <a class="link" href="https://www.instagram.com/_skill_bridge_/" target="_blank" rel="noopener">@_skill_bridge_ →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BRAND ================= -->
+<section id="marca">
+  <div class="wrap">
+    <div class="eyebrow">Identidad de marca</div>
+    <h2 style="font-size:clamp(26px,3.6vw,36px)">Un puente dibujado con datos</h2>
+    <p class="lede" style="margin-top:14px;margin-bottom:30px">Cada elemento de la identidad traduce la propuesta de valor: unir dos mundos que hoy no se entienden.</p>
+
+    <div class="brand">
+      <div>
+        <div class="logo-swatch">
+          <img src="assets/logo-skillbridge.png" alt="Logotipo de SkillBridge: una S en forma de puente atravesada por una línea con nodos digitales, sobre la palabra SkillBridge." width="398" height="357">
+          <div class="cap">Logotipo principal · SkillBridge S.r.l.</div>
+        </div>
+        <div class="swatches">
+          <div class="sw">
+            <div class="chipc" style="background:#0D2342"></div>
+            <div class="info"><div class="hex">#0D2342</div><div class="nm">Azul noche</div><div class="ro">Estabilidad y rigor. Es el tono con el que hablamos a empresas y reclutadores.</div></div>
+          </div>
+          <div class="sw">
+            <div class="chipc" style="background:#2B70E4"></div>
+            <div class="info"><div class="hex">#2B70E4</div><div class="nm">Azul eléctrico</div><div class="ro">Innovación y dinamismo. Es el tono con el que hablamos a estudiantes y talento júnior.</div></div>
+          </div>
+        </div>
+        <div class="slogan-box">
+          <div class="q">“Skills today, opportunities tomorrow”</div>
+          <div class="n">Eslogan corporativo. Resume la promesa en un solo intercambio: hoy demuestras, mañana te llaman.</div>
+        </div>
+      </div>
+
+      <div class="rationale">
+        <div class="r">
+          <h4>La gran “S” en forma de puente</h4>
+          <p>Representa el nexo entre dos mundos que a menudo tienen dificultades para comunicarse: los talentos universitarios emergentes y el mercado laboral. La forma de arco expresa solidez, transición y paso hacia nuevas oportunidades.</p>
+        </div>
+        <div class="r">
+          <h4>Las líneas con nodos digitales</h4>
+          <p>Simbolizan la evolución de la selección: un camino de crecimiento continuo guiado por el análisis de datos. Representan una evaluación meritocrática y objetiva, basada en métricas tangibles en lugar del CV estático.</p>
+        </div>
+        <div class="r">
+          <h4>Dos azules, dos conversaciones</h4>
+          <p>La marca habla a la vez a un director de RR. HH. de 55 años y a un estudiante de 22. El azul noche sostiene la credibilidad institucional; el azul eléctrico aporta la energía que hace que un reto parezca un juego y no un examen.</p>
+        </div>
+        <div class="r">
+          <h4>Cómo se aplica en cada canal</h4>
+          <p>En LinkedIn domina el azul noche, con gráficos de datos y case studies. En Instagram y TikTok domina el azul eléctrico, con vídeo vertical, insignias animadas e historias de contrataciones reales.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TEAM ================= -->
+<section id="equipo" style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">Equipo fundador</div>
+    <h2 style="font-size:clamp(26px,3.6vw,36px)">Quién está detrás</h2>
+    <p class="lede" style="margin-top:14px;margin-bottom:26px">Cuatro estudiantes de Marketing e Investigación de Mercados que han pasado, hace poco, por el lado del candidato.</p>
+    <div class="team">
+      <div class="member"><div class="in">MS</div><div class="nm">Marta Scarcella</div><div class="rl">Marca e identidad visual</div></div>
+      <div class="member"><div class="in">MM</div><div class="nm">Martina Mercurio</div><div class="rl">Contenido y comunidad</div></div>
+      <div class="member"><div class="in">AM</div><div class="nm">Andrea Mineo</div><div class="rl">Producto y retos</div></div>
+      <div class="member"><div class="in">LT</div><div class="nm">Luca Tortoreti</div><div class="rl">Estrategia y datos</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contacto" style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">Contacto</div>
+    <h2 style="font-size:clamp(26px,3.6vw,36px)">Empieza por una conversación</h2>
+    <p class="lede" style="margin-top:14px;margin-bottom:28px">Si eres candidato, dinos qué competencia quieres demostrar. Si eres empresa, dinos qué puesto te cuesta cubrir.</p>
+
+    <div class="contact">
+      <form id="leadForm" novalidate>
+        <div class="field">
+          <label for="f-nombre">Nombre</label>
+          <input id="f-nombre" name="nombre" type="text" autocomplete="name" placeholder="Nombre y apellidos">
+        </div>
+        <div class="field">
+          <label for="f-perfil">Quién eres</label>
+          <select id="f-perfil" name="perfil">
+            <option>Candidato o estudiante</option>
+            <option>Empresa o reclutador</option>
+            <option>Universidad o centro de formación</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-org">Empresa o universidad</label>
+          <input id="f-org" name="org" type="text" placeholder="Opcional">
+        </div>
+        <div class="field">
+          <label for="f-msg">Qué necesitas</label>
+          <textarea id="f-msg" name="msg" placeholder="Ej.: quiero demostrar que sé analizar datos, o busco un perfil júnior de marketing para Berlín."></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit" style="justify-self:start">Enviar</button>
+        <p class="form-note">Maqueta del proyecto académico: el formulario no envía ni almacena datos. Para contactar de verdad, usa los canales de al lado.</p>
+        <div class="sent" id="formOut" hidden>
+          <b>Este formulario es una demostración</b>
+          Reproduce el formulario de un clic que usamos en LinkedIn e Instagram, pero no transmite nada. Escríbenos por LinkedIn o por mensaje directo en Instagram y te respondemos ahí.
+        </div>
+      </form>
+
+      <div>
+        <h3 style="font-size:19px">Canales activos</h3>
+        <p style="color:var(--muted);font-size:15px;margin-top:8px">Las dos cuentas están publicando ya. LinkedIn para empresas, Instagram para candidatos y comunidad.</p>
+        <div class="reach">
+          <a href="https://www.linkedin.com/company/skillbridge-talent/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M3 9h4v12H3zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.55 4.78 5.87V21h-4v-5.5c0-1.31-.03-3-1.9-3-1.9 0-2.2 1.43-2.2 2.9V21h-4z"/></svg>
+            <span><span class="h">SkillBridge en LinkedIn</span><span class="u">linkedin.com/company/skillbridge-talent</span></span>
+          </a>
+          <a href="https://www.instagram.com/_skill_bridge_/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.15-3.23 1.66-4.77 4.92-4.92 1.27-.06 1.65-.07 4.85-.07m0 5.17a4.67 4.67 0 1 0 0 9.34 4.67 4.67 0 0 0 0-9.34m0 7.7a3.03 3.03 0 1 1 0-6.06 3.03 3.03 0 0 1 0 6.06m4.85-8.96a1.09 1.09 0 1 0 0 2.18 1.09 1.09 0 0 0 0-2.18"/></svg>
+            <span><span class="h">@_skill_bridge_</span><span class="u">instagram.com/_skill_bridge_</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="wordmark" href="#top" style="font-size:22px">
+          <svg class="glyph" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M3 19h4l4-4h5.5a3.5 3.5 0 0 0 0-7H10a3.5 3.5 0 0 1 0-7h5l3-3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="3" cy="19" r="2.2" fill="#2B70E4"/><circle cx="21" cy="5" r="2.2" fill="#2B70E4"/>
+          </svg>
+          Skill<em>Bridge</em>
+        </a>
+        <p style="color:var(--muted);font-size:15px;margin-top:14px;max-width:44ch">Skills today, opportunities tomorrow. Plataforma híbrida de selección basada en el mérito.</p>
+        <p class="academic">
+          <b>Proyecto académico.</b> SkillBridge S.r.l. es una empresa ficticia creada para las prácticas 1 y 2 de
+          <i>Business Strategy &amp; Digital Media</i> / Marketing Online, curso 2026-2027, Grado en Marketing e Investigación de Mercados.
+          Profesora: Doaa Herzallah Mohammad. Equipo: M. Scarcella, M. Mercurio, A. Mineo, L. Tortoreti.
+        </p>
+      </div>
+      <div>
+        <div class="eyebrow">Referencias</div>
+        <div class="refs">
+          <p>Kemp, S. (2024, 20 de febrero). <i>Digital 2024: Germany</i>. DataReportal – Global Digital Insights. <a href="https://datareportal.com/reports/digital-2024-germany" target="_blank" rel="noopener">https://datareportal.com/reports/digital-2024-germany</a></p>
+          <p>Statistisches Bundesamt. (2024). <i>Labour market: Registered job vacancies and employment figures in Germany</i>. <a href="https://www.destatis.de/EN/Themes/Labour/Labour-Market/_node.html" target="_blank" rel="noopener">https://www.destatis.de/EN/Themes/Labour/Labour-Market/_node.html</a></p>
+          <p>We Are Social &amp; Meltwater. (2024). <i>Digital 2024: Global Overview Report</i>. DataReportal. <a href="https://datareportal.com/reports/digital-2024-global-overview-report" target="_blank" rel="noopener">https://datareportal.com/reports/digital-2024-global-overview-report</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="foot-end">
+      <span>SkillBridge S.r.l. · Marketing Online 2026/2027</span>
+      <span>Lanzamiento piloto · Alemania</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var retos = [
+    {t:"Copy para redes", id:"#037", min:"12 min",
+     brief:"Escribe el copy de un Reel de 15 segundos para lanzar una app de empleo dirigida a jóvenes de 20 a 28 años.",
+     crit:["El gancho aparece en los tres primeros segundos.","Una sola llamada a la acción, explícita.","Máximo 220 caracteres, sin listas de hashtags."],
+     badge:"Social Copy · Nivel 2"},
+    {t:"Depuración de código", id:"#052", min:"18 min",
+     brief:"Encuentra y corrige el error que rompe el cálculo del total en una función de carrito de compra.",
+     crit:["El test automático pasa en verde.","La causa del fallo, explicada en dos líneas.","Sin añadir librerías externas."],
+     badge:"Debug JS · Nivel 1"},
+    {t:"Análisis de datos", id:"#068", min:"15 min",
+     brief:"Con 400 filas de altas y bajas de usuarios, di qué canal capta mejor y justifícalo con dos métricas.",
+     crit:["La métrica elegida responde a la pregunta.","Conclusión en una sola frase accionable.","Sin gráficos decorativos que no aporten."],
+     badge:"Data Insight · Nivel 2"},
+    {t:"Plan de medios", id:"#081", min:"20 min",
+     brief:"Reparte 2.000 € entre tres canales para conseguir 500 registros y explica el criterio del reparto.",
+     crit:["CPA estimado por canal.","Hipótesis declaradas de forma explícita.","Plan alternativo si un canal no rinde."],
+     badge:"Media Planning · Nivel 1"}
+  ];
+
+  var panel = document.getElementById("retoPanel");
+  var chips = Array.prototype.slice.call(document.querySelectorAll(".chip"));
+  if(!panel || !chips.length) return;
+
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){
+    return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]; }); }
+
+  function render(i){
+    var r = retos[i];
+    panel.innerHTML =
+      '<div class="head"><h3>' + esc(r.t) + '</h3>' +
+      '<span class="meta">Reto ' + esc(r.id) + ' · ' + esc(r.min) + ' · móvil</span></div>' +
+      '<p class="brief">' + esc(r.brief) + '</p>' +
+      '<ul class="crit">' + r.crit.map(function(c){ return '<li>' + esc(c) + '</li>'; }).join("") + '</ul>' +
+      '<div class="badge">' +
+        '<svg class="shield" viewBox="0 0 24 24" fill="none" aria-hidden="true">' +
+        '<path d="M12 2.6 20 5.5v6.1c0 4.7-3.2 8.3-8 9.8-4.8-1.5-8-5.1-8-9.8V5.5z" fill="var(--volt)"/>' +
+        '<path d="m8.4 12.1 2.6 2.6 4.8-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>' +
+        '<div><div class="t">' + esc(r.badge) + '</div><div class="s">Insignia verificada</div></div>' +
+      '</div>';
+  }
+
+  chips.forEach(function(chip){
+    chip.addEventListener("click", function(){
+      chips.forEach(function(c){ c.setAttribute("aria-selected","false"); });
+      chip.setAttribute("aria-selected","true");
+      render(parseInt(chip.dataset.i, 10));
+    });
+  });
+
+  var form = document.getElementById("leadForm");
+  var out  = document.getElementById("formOut");
+  if(form && out){
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      out.hidden = false;
+      var calm = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      out.scrollIntoView({block:"nearest", behavior: calm ? "auto" : "smooth"});
+    });
+  }
+})();
+</script>
+</body>
+</html>
