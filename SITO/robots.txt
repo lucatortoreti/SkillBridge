@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lucatortoreti.github.io/skillbridge/sitemap.xml
+Sitemap: https://skillbridge-talent.pages.dev/sitemap.xml

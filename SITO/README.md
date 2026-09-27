@@ -6,7 +6,7 @@ Investigación de Mercados). Profesora: Doaa Herzallah Mohammad.
 
 **Equipo:** Marta Scarcella · Martina Mercurio · Andrea Mineo · Luca Tortoreti
 
-🔗 **Sitio publicado:** https://lucatortoreti.github.io/skillbridge/
+🔗 **Sitio publicado:** https://skillbridge-talent.pages.dev/
 
 ## Qué contiene
 
